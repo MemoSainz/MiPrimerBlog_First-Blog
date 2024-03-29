@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primer blog HTML</title>
+</head>
+
+<body style="text-align: center; justify-content: center; align-items: center; background-color: #181a1b; color: #e8e6e3; "> 
+                                <!--      >>> Header, section & footer  -->
+
+
+    <header>
+        <h1 id="titulo">Blog de León de Judá</h1>
+       <!-- id=" " -->          <!--      >>> Atributos 'id' y 'class'  -->
+       <!-- class=" " -->
+        <!-- Para 'id' se recomienda colocarlo solamente una vez; 
+             para asignarle un identificador a más de un elemento
+             y utilizar el mismo texto para poder identificarlo,
+             en ese caso se debe utilizar 'class'-->
+        <!-- Existiran momentos donde nosotros vamos a querer darle un identificador
+             único o genérico a nuestras etiquetas de HTML, para interactuar con ellos
+             mendiante Javascrip o para asignarle algún estilo para que cambie su forma
+             en como se ve.  -->
+    </header>  <!-- 1. no podemos poner una etiqueta de header dentro de una etiqueta de header
+                    2. no podemos poner una etiqueta de hearder dentro de una etiqueta de footer -->
+
+
+    <div> <!-- Etiqueta común; es normal ver un 'div' dentro de otro 'div' -->
+        <p>soy un párrafo dentro de un div</p>
+    </div>
+
+
+    <section>  <!-- 'section' sirve para que nosotros podamos definir secciones de nuestra aplicación -->
+        <article class="post">  <!-- 'article' se utiliza para poder definir contenido completamente independiente 
+            (como posts de un blog, para colocar un título, una descripción, imagen y párrafo; historia de noticias, 
+            para enmarcar una publicación; para un tweet; o para una imagen)
+            para poder identificar cada uno de estos elementos de manera independiente. -->
+            <h2>Título de mi post</h2>
+            <p>Descripción de mi post</p>
+            <img src="img/3.jpg" width="400" />
+            <p>Texto del artículo que hay acá y es texto de prueba. Párrafo chilo!</p>
+        </article>
+        <br>
+        <article class="post">
+            <h2>Título de mi post 2</h2>
+            <p>Descripción de mi post 2</p>
+            <img src="img/1.jpg" width="400" />
+            <p>Texto del artículo que hay acá y es texto de prueba. Párrafo chilo!</p>
+        </article>
+        <br>
+        <article class="post">
+            <h2>Título de mi post 3</h2>
+            <p>Descripción de mi post 3</p>
+            <img src="img/2.jpg" width="400" />
+            <p>Texto del artículo que hay acá y es texto de prueba. Párrafo chilo!</p>
+        </article>
+        <br>
+    </section>
+    <footer>
+        <a href="#titulo" style="color: rgb(3, 80, 189);">Ir al comienzo</a> <!-- Referencia al 'id' -->
+        &nbsp; &nbsp; &nbsp; 
+        <a href="mailto:guillermosain12345@Lionmail.com" style="color: rgb(3, 80, 189)">Contáctame aquí</a><br><br>
+        
+        <p>&copy; Memo Sainz Copyright 2023 <a style="color:rgb(33, 50, 230)" target="_blank" href="https://github.com/MemoSainz">¡Visita my Github!</a></p>
+        
+    </footer>
+
+</body>
+</html>
